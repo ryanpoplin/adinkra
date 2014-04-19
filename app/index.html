@@ -1,3 +1,4 @@
+<!-- Just Testing... -->
 <!doctype html>
 <html lang="en">
 <head>
@@ -16,11 +17,66 @@
 			<form>
 				<div>
 					<label>Task</label>
-					<!-- ... -->
+					<input type="text" required="required" class="large" placeholder="ExcepComm Task..." />
 				</div>
+				<div>
+					<label>Required by</label><input type="date" required="required" name="requiredBy" />
+				</div>
+				<div>
+					<label>Category</label>
+					<select name="category">
+						<option value="Personal"></option>
+						<option value="work"></option>
+					</select>
+				</div>
+				<nav>
+					<a href="#">Save Task</a>
+					<a href="#">Clear Task</a>
+				</nav>
 			</form>
 		</section>
+		<section>
+			<table id="table-tasks">
+				<colgroup>
+					<!-- HTML5 Proper Syntax? -->
+					<col width="50%">
+					<col width="25%">
+					<col width="25%">
+				</colgroup>
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Due</th>
+						<th>Category</th>
+					</tr>
+				</thead>
+				<tbody>
+					<!-- Refactor if needed... -->
+					<tr>
+						<td>Do something now!</td>
+						<td><time datetime="2014-4-19">2014-4-19></time></td>
+						<td>Personal</td>
+					</tr>
+					<tr class="even">
+						<td>Do another something now!</td>
+						<td><time datetime="2014-04-19">2014-04-19</time></td>
+						<td>Work</td>
+					</tr>
+					<tr>
+						<td>One one last thing!</td>
+						<td><time datetime="2014-04-19">2014-04-19</time></td>
+						<td>Work</td>
+					</tr>
+				</tbody>
+			</table>
+			<nav>
+				<a href="#">Add Task</a>
+			</nav>
+		</section>
 	</main>
+	<footer>
+		<span>You have 3 Tasks...</span>
+	</footer>
 	<!-- Testing... -->
 </body>
 </html>
