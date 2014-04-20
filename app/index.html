@@ -1,82 +1,84 @@
-<!-- Just Testing... -->
 <!doctype html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<title>Exceptional Communication Prototype...</title>
-	<link rel="stylesheet" type="text/css" href="css/core.css" media="screen">
-</head>
-<body>
-	<!-- Testing... -->
-	<header>
-		<!-- Task List for Exceptional Communication Prototype... -->
-		<span>Exceptional Communication Prototype Task List...</span>
-	</header>
-	<main>
-		<section>
-			<form>
-				<div>
-					<label>Task</label>
-					<input type="text" required="required" class="large" placeholder="ExcepComm Task..." />
-				</div>
-				<div>
-					<label>Required by</label><input type="date" required="required" name="requiredBy" />
-				</div>
-				<div>
-					<label>Category</label>
-					<select name="category">
-						<option value="Personal"></option>
-						<option value="work"></option>
-					</select>
-				</div>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='http://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/core.css" media="screen">
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <header>
+			<span>Exceptional Communication Prototype Task List...</span>
+		</header>
+		<main>
+			<section>
+				<form>
+					<div>
+						<label>Task</label>
+						<input type="text" required="required" class="large" placeholder="ExcepComm Task..." />
+					</div>
+					<div>
+						<label>Required by</label><input type="date" required="required" name="requiredBy" />
+					</div>
+					<div>
+						<label>Category</label>
+						<select name="category">
+							<option value="Personal"></option>
+							<option value="work"></option>
+						</select>
+					</div>
+					<nav>
+						<a href="#">Save Task</a>
+						<a href="#">Clear Task</a>
+					</nav>
+				</form>
+			</section>
+			<section>
+				<table id="table-tasks">
+					<colgroup>
+						<col width="50%">
+						<col width="25%">
+						<col width="25%">
+					</colgroup>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Due</th>
+							<th>Category</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Do something now!</td>
+							<td><time datetime="2014-04-19">2014-04-19</time></td>
+							<td>Personal</td>
+						</tr>
+						<tr class="even">
+							<td>Do another something now!</td>
+							<td><time datetime="2014-04-19">2014-04-19</time></td>
+							<td>Work</td>
+						</tr>
+						<tr>
+							<td>One one last thing!</td>
+							<td><time datetime="2014-04-19">2014-04-19</time></td>
+							<td>Work</td>
+						</tr>
+					</tbody>
+				</table>
 				<nav>
-					<a href="#">Save Task</a>
-					<a href="#">Clear Task</a>
+					<a href="#">Add Task</a>
 				</nav>
-			</form>
-		</section>
-		<section>
-			<table id="table-tasks">
-				<colgroup>
-					<!-- HTML5 Proper Syntax? -->
-					<col width="50%">
-					<col width="25%">
-					<col width="25%">
-				</colgroup>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Due</th>
-						<th>Category</th>
-					</tr>
-				</thead>
-				<tbody>
-					<!-- Refactor if needed... -->
-					<tr>
-						<td>Do something now!</td>
-						<td><time datetime="2014-4-19">2014-4-19></time></td>
-						<td>Personal</td>
-					</tr>
-					<tr class="even">
-						<td>Do another something now!</td>
-						<td><time datetime="2014-04-19">2014-04-19</time></td>
-						<td>Work</td>
-					</tr>
-					<tr>
-						<td>One one last thing!</td>
-						<td><time datetime="2014-04-19">2014-04-19</time></td>
-						<td>Work</td>
-					</tr>
-				</tbody>
-			</table>
-			<nav>
-				<a href="#">Add Task</a>
-			</nav>
-		</section>
-	</main>
-	<footer>
-		<span>You have 3 Tasks...</span>
-	</footer>
-	<!-- Testing... -->
-</body>
+			</section>
+		</main>
+		<footer>
+			<span>You have 3 Tasks...</span>
+		</footer>  
+        <!--<script src="js/main.js"></script>-->
+    </body>
 </html>
