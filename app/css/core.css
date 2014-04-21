@@ -51,21 +51,19 @@ table {
 	font-family: 'Lato', sans-serif;
 }
 header {
+	margin-top: 1em;
 	width: 100%;
-	height: 40px;
 	color: #333;
-	background-color: #d1e0e1;
 	font-size: 2em;
 	text-align: center;
-	line-height: 40px;
 }
 footer {
+	margin-bottom: 1.5em;
+	position: fixed;
+	bottom: 0;
 	width: 100%;
-	height: 40px;
-	background-color: #d1e0e1;
 	font-size: 1.5em;
 	text-align: center;
-	line-height: 40px;
 	margin-top: 30px;
 }
 table, th, td {
@@ -82,7 +80,6 @@ thead {
 	line-height: 30px;
 }
 thead th {
-	background-color: #53777a;
 	color: #fff;
 	font-size: 1.5em;
 	font-weight: bold;
@@ -94,14 +91,13 @@ td {
 	padding-left: 10px;
 }
 .even {
-	background-color: #f8f8f8;
+
 }
 nav {
 	margin: 20px 0 20px 0;
 }
 nav a {
-	background: #53777a;
-	color: #fff;
+	color: #131313;
 	width: 80px;
 	text-decoration: none;
 	border: 1px solid #5b5b5b;
@@ -143,10 +139,10 @@ label.error {
 	font-weight: bold;
 }
 .overdue {
-	background-color: #F7DCE5;
+
 }
 .warning {
-	background-color: #F7F7DC;
+
 }
 .task-completed {
 	text-decoration: line-through;
